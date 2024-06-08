@@ -1,0 +1,129 @@
+:root{
+    --primary: #ff0185;
+    --secondary: #091126;
+
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    overflow: hidden;
+    background-image: linear-gradient(#091126,#ff0185);
+}
+.hh{
+    margin-top: -3%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact{
+    height: 70vh;
+    width: 75vw;
+    box-shadow: 0 .2rem .5rem #000600;
+    border-radius: 1rem;
+    display: flex;
+    overflow: hidden;
+}
+.map,.form{
+    width: 50%;
+    height: 100%;
+ 
+}
+.form{
+    background-color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.form::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border: 1.4rem solid transparent;
+    border-right: 1.4rem solid var(--secondary);
+    top: 25%;
+    left: 47.9%;
+
+
+}
+.form>h1{
+    color: white;
+    font: 500 1.8rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0 2rem;
+    
+}
+.form>form{
+    padding: 0 2rem;
+}
+.form input, textarea{
+    width: 100%;
+    padding: 1rem;
+    border: 0.08rem solid var(--primary);
+    border-radius:2rem;
+    background-color: unset;
+color: white;}
+
+.form input:not(:first-child), .form textarea, .form button{
+    margin-top: .8rem;
+}
+.form button{
+    background-color: var(--primary);
+    padding: 1rem 2rem;
+    color: white;
+    border-radius: 2rem ;
+    border:none;
+    cursor: pointer;
+    margin-bottom: 6%;
+}
+.form textarea{
+    height: 6rem;
+    resize:none;
+}
+.map iframe{
+    width: 100%;
+    height: 100%;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }

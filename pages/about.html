@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="icon" type="image/x-icon" href="/images/lgo.png">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <nav>
+        <ul class="nav-links">
+            
+<li><img class="imm" src="../images/lgo.png" alt="logo"></li>
+            <li><a href="../index.html">Home</a></li>
+            <li class="center"><a href="about.html">About</a></li>
+            <li class="center"><a href="../Resume/index.html">Resume</a></li>
+            <li class="upward"><a href="portfolio.html">Portfolio</a></li>
+            <li class="forward"><a href="../pages/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+    <center><h1>ABOUT ME </h1>
+    <p>  Hi there! I'm <span class="hh">Anisha Watts</span>, a Computer Science Student and Front-end developer with a love for code and creativity. With skills in C, C++, SQL, HTML, CSS, JavaScript, and Flutter, I build engaging web and mobile experiences. Beyond the screen, I express myself through sketching, poetry, and calligraphy, blending art with tech in all I do. </p>
+    <marquee><p class="hh">Always Learning, Always Creating. </p></marquee>
+    </center>
+        <div class="container">
+            <input type="radio" name="slider" id="item-1" checked>
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3">
+          <div class="cards">
+            <label class="card" for="item-1" id="song-1">
+              <img src="../images/about 1.png" alt="song">
+            </label>
+            <label class="card" for="item-2" id="song-2">
+              <img src="../images/about 2.png" alt="song">
+            </label>
+            <label class="card" for="item-3" id="song-3">
+              <img src="../images/about3.png" alt="song">
+            </label>
+          </div>
+          <div class="player">
+            <div class="upper-part">
+              <div class="play-icon">
+                <svg width="20" height="20" fill="#f6c2c2" stroke="#f6c2c2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-play" viewBox="0 0 24 24">
+                  <defs/>
+                  <path d="M5 3l14 9-14 9V3z"/>
+                </svg>
+              </div>
+              <div class="info-area" id="test">
+                
+                <label class="song-info" id="song-info-1">
+                  <div class="title">If you Believe</div>
+                  <div class="sub-line">
+                    <div class="subtitle">Strive To Be</div>
+                    <div class="time">4.05</div>
+                  </div>
+                </label>
+                <label class="song-info" id="song-info-2">
+                    <div class="title">This is the Life</div>
+                    <div class="sub-line">
+                      <div class="subtitle">Amy MacDonald</div>
+                      <div class="time">2.01
+                      </div>
+                    </div>
+                  </label>
+                <label class="song-info" id="song-info-3">
+                  <div class="title">Change</div>
+                  <div class="sub-line">
+                    <div class="subtitle">Taylor Swift</div>
+                    <div class="time">4.05</div>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <span class="progress"></span>
+            </div>
+          </div>
+
+        </div>
+    
+        <script>
+            $('input').on('change', function() {
+                $('body').toggleClass('blue');
+              });
+        </script>
+</body>
+</html>
